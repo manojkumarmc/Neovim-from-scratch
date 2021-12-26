@@ -1,4 +1,5 @@
-
+-- To make the additional rust goodies
+-- the rust_analyzer should not be install via the :LspInstall command
 local status_ok, rt = pcall(require, "rust-tools")
 if not status_ok then
 	return

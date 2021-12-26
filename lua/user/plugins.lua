@@ -112,10 +112,12 @@ return packer.startup(function(use)
   use { 'arzg/vim-rust-syntax-ext' } --- rust: syntax extension
   use { 'simrat39/rust-tools.nvim' } --- rust: loads of tools
 
-  use { 'norcalli/nvim-colorizer.lua' }       --- Colorizer
-  use { 'junegunn/goyo.vim' }                 --- focus
-  use { 'xiyaowong/nvim-transparent' }        --- transparency
-  use { 'unblevable/quick-scope' }            --- horizonal movement
+  use 'norcalli/nvim-colorizer.lua'       --- Colorizer
+  use 'junegunn/goyo.vim'                 --- focus
+  use 'xiyaowong/nvim-transparent'        --- transparency
+  use 'unblevable/quick-scope'            --- horizonal movement
+  use 'kevinhwang91/nvim-bqf'
+  use 'simrat39/symbols-outline.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

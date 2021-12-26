@@ -62,6 +62,7 @@ return packer.startup(function(use)
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
+  use "rebelot/kanagawa.nvim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -108,9 +109,10 @@ return packer.startup(function(use)
     run = 'cd app && yarn install'
   }
 
-  use { 'rust-lang/rust.vim' }       --- rust!
-  use { 'arzg/vim-rust-syntax-ext' } --- rust: syntax extension
-  use { 'simrat39/rust-tools.nvim' } --- rust: loads of tools
+  use 'rust-lang/rust.vim'       --- rust!
+  use 'arzg/vim-rust-syntax-ext' --- rust: syntax extension
+  use 'simrat39/rust-tools.nvim' --- rust: loads of tools
+  use 'nvim-lua/lsp_extensions.nvim'
 
   use 'norcalli/nvim-colorizer.lua'       --- Colorizer
   use 'junegunn/goyo.vim'                 --- focus

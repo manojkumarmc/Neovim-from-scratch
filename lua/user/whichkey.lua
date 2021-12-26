@@ -181,6 +181,12 @@ local mappings = {
     h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
   },
+
+  i = {
+    name = "Inline Hints",
+    l = { "<cmd>lua require'lsp_extensions'.inlay_hints{only_current_line = true, enabled = {'TypeHint', 'ChainingHint', 'ParameterHint'}, }<cr>", "Line by line"},
+    a = { "<cmd>lua require'lsp_extensions'.inlay_hints{enabled = {'TypeHint', 'ChainingHint', 'ParameterHint'}, aligned = true }<cr>", "All lines"},
+  },
 }
 
 which_key.setup(setup)

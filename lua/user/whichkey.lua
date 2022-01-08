@@ -85,7 +85,8 @@ local mappings = {
     "Buffers",
   },
   ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
-  ["e"] = { "<cmd>FixWhitespace<cr>", "Fix Whitespace" },
+  ["x"] = { "<cmd>FixWhitespace<cr>", "Fix Whitespace" },
+  ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" }
   ["w"] = { "<cmd>w!<CR>", "Save" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
   ["f"] = {
